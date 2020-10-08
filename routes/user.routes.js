@@ -3,7 +3,7 @@ const router = express.Router();
 
 const isLogged = (req, res, next) => {
   if(!req.user){
-    res.redirect('/no-permission');
+    res.redirect('/user/no-permission');
   } else {
     next();
   }
